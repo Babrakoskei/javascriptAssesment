@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Quiz">        
+        <form>
+          <p><strong><h1>Q1.</h1></strong></p>
+      
+            <label for="name">User name ?:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+            <label for="class">Class name:</label><br>
+            <input type="text" id="class" name="class" placeholder="Enter your class name ?"><br>
+                <label for="subject">Subject name:</label><br>
+                <input type="text" id="subject" name="subject" placeholder="Enter subject name"><br>
+                <label for=" date">Date:</label><br>
+                <input type="date" id="date" name="date" placeholder="Enter the date?"><br>
+                <input type="button" onclick="quizDisplay()" value="Submit">
+            </form>
+      </div>
+   <script>
+ function quizDisplay(){
+
+      var name = document.getElementById("name").value;
+      var className =document.getElementById("class").value;
+      var subject = document.getElementById("subject").value;
+      var date = document.getElementById("date").value;
+      if(name ==="" || className===""||subject===""||date===""){
+          alert("Kindly fill all the fields!")
+      }
+      else{
+        alert(`We have received this information:  name:${name} , className:${className}, subject:${subject} , on the date ${date}`)
+
+      }
+  } 
+   </script> 
+
+   <p><strong><h1>Q2.</h1></strong> 
+
+All values except from primitive values are objects in javascript. To create an object in 
+javascript one has to have knowledge of variables. Variables being the memory storage for 
+our values. You need to first declare a variable using the var, let or const keywords.
+Then you have to input the equals operator and calibraces ,which will declare the scope 
+of your object. Objects are created using key and values and are separated using a comma.
+If you would wish to get an output from your objects, you can do so by using the console.log keyword.
+You will have to input the variable name and the key you would like to access from the object.
+With ES6 that has been made easy. By doing that, you would have sucessfully created an object in Javascript.
+
+
+  </p>
+   <p><strong><h1>Q3.</h1></strong>
+    Global scope − it is has a global scope which means it can be accessed  anywhere in your JavaScript code. <br>
+
+    Local scope − it has a local scope which is only accesible within a function where it is defined. 
+    Function parameters are always local to that function. <br>
+    
+    A lexical scope - it means that a variable defined outside a function can be accessible inside another function defined after the variable declaration. 
+  </p>
+   <p><strong><h1>Q4.</h1></strong>
+    Nothing will output in the console in both of the functions simply because, the first return statement immediately 
+    stops execution of our function and causes our function to stop, therefore output can not be seen. The same goes for the second function.
+    
+  </p>
+</body>
+</html>
+
